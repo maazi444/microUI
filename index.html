@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- google fonts end -->
+    <!-- cdn fonts -->
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet">
+    <!-- cdn fonts end -->
+    <title>User Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
 </head>
+
 <body>
-    <h1 class="text-2xl">talha</h1>
-    <h2>MAAZ AHMAD</h2>
+    <!-- Header -->
+
+    <header class="flex flex-col md:flex-row">
+        <!-- header logo -->
+        <div class="p-2 md:p-5 border border-slate-900 bg-greyish">
+            <a href="#">
+                <!-- <h1 class="font-outfit font-normal font-medium text-center text-lg md:text-3xl leading-9">MICROCOMSOL</h1> -->
+                <img src="{{ asset('assets/icons/logo-01.png') }}" class="w-48 mx-auto md:mx-0 md:w-64">
+            </a>
+        </div>
+        <!-- header logo end -->
+        <!-- navbar -->
+        <nav class="text-blackish p-1 md:p-5 border border-slate-900 w-full">
+            <div class="inline-block flex md:float-right justify-center items-center">
+                <div class="flex items-center">
+                    @auth
+                    <a href="{{ route('logout') }}"
+                        class="font-montserrat font-normal text-base leading-normal px-2 text-xs md:text-base flex flex-row items-center">
+                        <img src="{{ asset('assets/icons/icons8-exit-30.png') }}" class="w-5 h-5">
+                        <span>Logout</span>
+                    </a>
+                    @endauth
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+
+    <!-- Header End -->
 </body>
+
 </html>
