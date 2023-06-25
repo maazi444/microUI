@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- google fonts end -->
+    <!-- cdn fonts -->
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet" />
+    <!-- cdn fonts end -->
+    <title>User Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="flex flex-col md:flex-row">
+        <!-- header logo -->
+        <div class="p-2 md:p-5 border border-slate-900 bg-greyish">
+            <a href="#">
+                <!-- <h1 class="font-outfit font-normal font-medium text-center text-lg md:text-3xl leading-9">MICROCOMSOL</h1> -->
+                <img src="assets/icons/logo-01.png" class="w-48 mx-auto md:mx-0 md:w-64" />
+            </a>
+        </div>
+        <!-- header logo end -->
+        <!-- navbar -->
+        <nav class="text-blackish p-1 md:p-5 border border-slate-900 w-full">
+            <div class="inline-block flex md:float-right justify-center items-center">
+                <div class="flex items-center">
+                    <a href=""
+                        class="font-montserrat font-normal text-base leading-normal px-2 text-xs md:text-base flex flex-row items-center">
+                        <img src="assets/icons/icons8-exit-30.png" class="w-5 h-5" />
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Section -->
+
+    <section class="flex">
+        <!-- sidebar -->
+        <aside class="hidden md:block bg-greyish border border-neutral-500 w-1/12 h-[88vh]">
+            <!-- tab -->
+            <a href="">
+                <div
+                    class="flex flex-col items-center border-b border-neutral-500 py-5 {{ Request::is('admin/dashboard') ? ' bg-white' : '' }}">
+                    <img src="assets/icons/icons8-home-30.png" />
+                    <p class="text-xs">Home</p>
+                </div>
+            </a>
+            <!-- tab end -->
+
+            <!-- tab -->
+            <a href="">
+                <div
+                    class="flex flex-col items-center border-b border-neutral-500 py-5 {{ Request::is('admin/users/*') ? ' bg-white' : '' }}">
+                    <img src="assets/icons/icons8-users-30.png" />
+                    <p class="text-xs">Users</p>
+                </div>
+            </a>
+            <!-- tab end -->
+
+            <!-- tab -->
+            <a href="">
+                <div
+                    class="flex flex-col items-center border-b border-neutral-500 py-5 {{ Request::is('admin/category/*') ? ' bg-white' : '' }}">
+                    <img src="assets/icons/icons8-four-squares-30.png" />
+                    <p class="text-xs">Categories</p>
+                </div>
+            </a>
+            <!-- tab end -->
+
+            <!-- tab -->
+            <a href="">
+                <div
+                    class="flex flex-col items-center border-b border-neutral-500 py-5 {{ Request::is('admin/courses/*') ? ' bg-white' : '' }}">
+                    <img src="assets/icons/icons8-book-30.png" />
+                    <p class="text-xs">Courses</p>
+                </div>
+            </a>
+            <!-- tab end -->
+
+            <!-- tab -->
+            <a href="">
+                <div class="flex flex-col items-center border-b border-neutral-500 py-5">
+                    <img src="assets/icons/icons8-event-30.png" />
+                    <p class="text-xs">Events</p>
+                </div>
+            </a>
+            <!-- tab end -->
+
+            <!-- tab -->
+            <a href="">
+                <div class="flex flex-col items-center border-b border-neutral-500 py-5">
+                    <img src="assets/icons/icons8-settings-30.png" />
+                    <p class="text-xs">Settings</p>
+                </div>
+            </a>
+            <!-- tab end -->
+        </aside>
+        <!-- sidebar end -->
+
+        <!-- Content Area -->
+        <div class="p-3 w-full md:w-11/12 h-[88vh] overflow-y-auto">
+            <h1 class="m-3 mt-5 p-2 pl-4 bg-greyish text-2xl font-bold border border-blackish rounded-md">
+                User Details
+            </h1>
+            <div class="m-3 text-lg">
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        Name
+                    </span>
+                    <span>
+                        Talha Gulzar
+                    </span>
+                </div>
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        Email
+                    </span>
+                    <span>
+                        TalhaGulzar@gmail.com
+                    </span>
+                </div>
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        Phone No
+                    </span>
+                    <span>
+                        0344.......
+                    </span>
+                </div>
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        Education
+                    </span>
+                    <span>
+                        BSCS(ongoing)
+                    </span>
+                </div>
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        Date of Birth
+                    </span>
+                    <span>
+                        Student
+                    </span>
+                </div>
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        Gender
+                    </span>
+                    <span>
+                        Male
+                    </span>
+                </div>
+                <div class="p-3 border-b border-blackish">
+                    <span class=" inline-block w-2/5">
+                        City
+                    </span>
+                    <span>
+                        ABC
+                    </span>
+                </div>
+                <div class="p-3">
+                    <span class=" inline-block w-2/5">
+                        Registration Date
+                    </span>
+                    <span>
+                        24/10/2023
+                    </span>
+                </div>
+            </div>
+            <div>
+                <h1 class="m-3 p-2 pl-4 bg-greyish text-2xl font-bold border border-blackish rounded-md">
+                    Enrolled Courses
+                </h1>
+                <div >
+                    <div class=" m-3">
+                        
+                      <span>
+                        <h2 class=" p-2 border-b border-blackish font-bold text-lg">Course Name</h2>
+                      </span>    
+                      <span>
+                        <h2 class=" p-2 border-b border-blackish font-bold text-lg">Course Name</h2>
+                      </span>    
+                      <span>
+                        <h2 class=" p-2 border-b border-blackish font-bold text-lg">Course Name</h2>
+                      </span>
+                      <span>
+                        <h2 class=" p-2 border-b border-blackish font-bold text-lg">Course Name</h2>
+                      </span>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+    </section>
+
+    <!-- Main Section End -->
+</body>
+
+</html>
