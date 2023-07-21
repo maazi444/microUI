@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- google fonts end -->
+    <!-- cdn fonts -->
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet" />
+    <!-- cdn fonts end -->
+    <title>User Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="flex flex-col md:flex-row">
+        <!-- header logo -->
+        <div class="p-2 md:p-5 border border-slate-900 bg-greyish">
+            <a href="#">
+                <!-- <h1 class="font-outfit font-normal font-medium text-center text-lg md:text-3xl leading-9">MICROCOMSOL</h1> -->
+                <img src="assets/icons/logo-01.png" class="w-48 mx-auto md:mx-0 md:w-64" />
+            </a>
+        </div>
+        <!-- header logo end -->
+        <!-- navbar -->
+        <nav class="text-blackish p-1 md:p-5 border border-slate-900 w-full">
+            <div class="inline-block flex md:float-right justify-center items-center">
+                <div class="flex items-center">
+                    <a href=""
+                        class="font-montserrat font-normal text-base leading-normal px-2 text-xs md:text-base flex flex-row items-center">
+                        <img src="assets/icons/icons8-exit-30.png" class="w-5 h-5" />
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!-- Header End -->
+    <!-- main section -->
+    <section class="w-full p-10">
+        <!-- Microcomsol Privacy Policy -->
+        <div>
+            <h1 class="text-4xl font-bold">Microcomsol Privacy Policy</h1>
+            <p class=" mt-5 text-gray-800">Microcomsol is dedicated to safeguarding your privacy. This Privacy Policy
+                explains how we collect, use, disclose, and protect your
+                personal information and provides you with choices about its usage. It applies to all online services
+                offered by Microcomsol,
+                including our website at www.microcomsol.com, our mobile app Microcomsol Go, and any other online
+                service location
+                (collectively the "Service") where this Privacy Policy is made available to you.</p>
+            <p class="mt-3 text-gray-800">
+                By using the Service, you agree to our <span class="font-bold">Terms of Use</span> and consent to the
+                collection, use, and disclosure practices, as well as other
+                activities described in this Privacy Policy. If you do not agree with and consent to these practices,
+                please discontinue using the
+                Service.
+            </p>
+            <p class="mt-3 text-gray-800">
+                If you have any questions or wish to exercise your rights and choices, please contact us as set out in
+                the <span class="font-bold">“Contact us”</span> section.
+
+            </p>
+        </div>
+        <!-- ***************************** -->
+
+        <!-- Information Collection -->
+        <div class="mt-10">
+            <h1 class="text-3xl font-bold">Information Collection </h1>
+            <p class="  mt-3 text-gray-800">.
+                This section will discuss what type of information is collected. This includes categories of information
+                that (1) you provide to us directly and
+                (2) is collected by us automatically.
+            </p>
+
+            <div class="mt-2">
+                <h1 class="text-2xl font-bold"><span class="mr-3">1.</span>Information Provided by Users Directly
+                </h1>
+                <p class="text-gray-800 mt-1 ml-7">At Microcomsol, browsing our site doesn t require personal
+                    information. Registering for an account needs essential details like username and
+                    email. You can control additional information shared on public profiles. Messages you exchange may
+                    be processed and saved. Providing extra
+                    information is optional, and you are responsible for it. Your privacy is our priority, adhering to
+                    our Privacy Policy.
+                    The following are categories of information we collect and have collected directly from you.</p>
+
+                <div class="ml-7 mt-2">
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">a.</span>Names
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">When you register or create an account on our platform, you
+                            may provide your full names or usernames. This information helps us
+                            personalize your experience and communicate with you effectively.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">b.</span>Contact details
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">You may voluntarily share your email addresses, phone
+                            numbers, or mailing addresses when contacting us or signing up for newsletters
+                            or updates. This allows us to respond to inquiries and keep you informed about relevant
+                            information and updates.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">c.</span>User-Generated Content
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">We encourage you to engage with our platform by submitting
+                            comments, feedback, reviews, or responses to surveys. Any information you
+                            provide voluntarily contributes to our community and helps us improve our services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <h1 class="text-2xl font-bold"><span class="mr-3">2.</span>Information Collected Automatically
+                </h1>
+                <div class="ml-7 mt-2">
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">a.</span>Device Information
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">We automatically collect data from users' devices, such as IP
+                            addresses, operating systems, browser types, and device identifiers. This
+                            information assists us in providing a seamless experience and identifying potential
+                            technical issues.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">b.</span>Usage Data
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">Information about how users interact with our website, app,
+                            or services is collected, including pages visited, actions taken, and session
+                            duration. This data enables us to analyze user behavior and enhance our offerings.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">c.</span>Cookies and Similar Technologies
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">Our platform uses cookies, web beacons, and tracking
+                            technologies to gather data about users' browsing behavior and preferences.
+                            These technologies help us personalize content, improve functionality, and understand user
+                            interests.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <h1 class="text-2xl font-bold"><span class="mr-3">3.</span>
+                    Enriching Insights from External Partners
+                </h1>
+                <div class="ml-7 mt-2">
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">a.</span>Data from Social Media
+                        </h1>
+                        <p class="text-gray-800 mt-1 ml-7">If users choose to log in or sign up using their social
+                            accounts, we may receive certain information from those platforms with users' consent.
+                            This integration simplifies the registration process and allows users to share content from
+                            our platform on their social media accounts.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="text-lg font-bold"><span class="mr-3">b.</span>Data Aggregators or Analytics
+                            Providers
+                        </h1>
+                        <!-- <p class="text-gray-800 mt-1 ml-7">Information about how users interact with our website, app,
+                            or services is collected, including pages visited, actions taken, and session
+                            duration. This data enables us to analyze user behavior and enhance our offerings.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***************************** -->
+        <!-- Data Usage -->
+        <div class="mt-8">
+            <div>
+                <h1 class="text-3xl font-bold">Data Usage</h1>
+                <p class="mt-2 text-gray-800">At Microcomsol, we ensure responsible and transparent data usage to
+                    provide you with an exceptional learning experience. The information
+                    collected from our users is utilized for specific purposes outlined in our Privacy Policy. Here's
+                    how we use the data:</p>
+            </div>
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">1.</span>Personalization</h1>
+                <p class="ml-7 text-gray-800">We use the collected data to personalize your learning journey, tailoring
+                    course recommendations and content based on your
+                    preferences and interests.</p>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">2.</span>Service Improvement</h1>
+                <p class="ml-7 text-gray-800">Analyzing user interactions and feedback helps us continually enhance our
+                    website, app, and services, ensuring they meet your
+                    evolving needs.</p>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">3.</span>Communication
+                </h1>
+                <p class="ml-7 text-gray-800">Your contact details enable us to respond to inquiries, provide support,
+                    and keep you informed about updates and relevant information.
+                </p>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">4.</span>Marketing
+                </h1>
+                <p class="ml-7 text-gray-800">With your consent, we may use the information to send you promotional
+                    materials or marketing communications related to our services
+                    and offerings.</p>
+            </div>
+
+
+
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">5.</span>Analytics
+                </h1>
+                <p class="ml-7 text-gray-800">We utilize data analytics to gain insights into user behavior and
+                    preferences, allowing us to optimize the platform and improve user experiences.
+                </p>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">6.</span>User Generated Content
+                </h1>
+                <p class="ml-7 text-gray-800">Any feedback, comments, or content you voluntarily provide can be used to
+                    enhance our community and foster a positive learning environment.
+                </p>
+            </div>
+
+
+            <div>
+                <h1 class="font-bold text-lg mt-3"><span class="mr-3">7.</span>Third Party Service Providers
+                </h1>
+                <p class="ml-7 text-gray-800">We may engage trusted third party service providers to assist with certain
+                    operations, such as payment processing or customer support. These
+                    providers are bound by confidentiality agreements and use the information solely for service related
+                    purposes.</p>
+            </div>
+            <div>
+                <p class="  mt-3 text-gray-800">Rest assured that your data is handled with utmost care, adhering to our
+                    Privacy Policy and applicable data protection laws. We value your trust
+
+                    and take every measure to protect your privacy while delivering an enriching educational journey. If
+                    you have any concerns or questions regarding
+
+                    data usage, please feel free to reach out to our team.</p>
+            </div>
+        </div>
+        <!-- ***************************** -->
+
+        <!-- Cookies and Tracking Technologies -->
+        <div class="mt-10">
+            <h1 class="text-3xl font-bold">Cookies and Tracking Technologies
+            </h1>
+            <ul class="list-disc ml-7">
+                <li>
+                    <p class="mt-3 text-gray-800">We utilize cookies and tracking technologies to enhance your browsing
+                        experience and improve our services. Cookies are small data files stored on
+
+                        your device when you visit our website. These cookies help us remember your preferences, login
+                        credentials, and other settings, making it easier
+
+                        for you to navigate the site efficiently.</p>
+                </li>
+                <li>
+                    <p class="mt-5 text-gray-800">We also use tracking technologies, such as web beacons and pixel tags,
+                        to collect information about your interactions with our website. This data
+
+                        allows us to analyze user behavior, measure the effectiveness of our content, and optimize our
+                        platform's performance.</p>
+                </li>
+                <li>
+                    <p class="mt-5 text-gray-800">The information obtained from cookies and tracking technologies is
+                        used in compliance with our Privacy Policy and applicable data protection laws.
+
+                        Rest assured, your privacy and security are our top priorities, and we do not use cookies for
+                        any purposes other than improving your overall
+
+                        experience with Microcomsol.</p>
+                </li>
+                <li>
+                    <p class="mt-5 text-gray-800">By continuing to use our website, you consent to the use of cookies
+                        and tracking technologies as described in this policy. If you prefer not to allow
+
+                        cookies, you can adjust your browser settings accordingly. However, please note that disabling
+                        cookies may affect certain functionalities on our
+
+                        site. For more information or queries related to cookies and tracking technologies, feel free to
+                        contact our support team.</p>
+                </li>
+
+            </ul>
+
+
+
+
+
+
+        </div>
+        <!-- ***************************** -->
+
+        <!-- Data sharing -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">Data sharing
+            </h1>
+            <p class="mt-2 text-gray-800">At Microcomsol, we value your privacy and take data sharing seriously. We do
+                not sell, rent,
+                or disclose your personal information to third parties for
+                their marketing purposes without your explicit consent.</p>
+            <p class="mt-2 text-gray-800">However, there are instances where data sharing may be necessary to provide
+                our services effectively
+            </p>
+            <div>
+                <div class="mt-3">
+                    <h1 class="inline text-lg font-bold">Trusted Partners:</h1>
+                    <p class="inline text-gray-800"> We may share your information with trusted third party service
+                        providers who assist us in delivering our courses, processing
+                        payments, or providing customer support. These partners are bound by confidentiality agreements
+                        and only use the data for the intended purposes.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Legal Requirements: </h1>
+                    <p class="inline text-gray-800">In compliance with applicable laws and regulations, we may share
+                        your information in response to a court order,
+
+                        subpoena, or government request.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Business Transfers: </h1>
+                    <p class="inline text-gray-800">If Microcomsol undergoes a merger, acquisition, or sale of assets,
+                        your information may be transferred to the acquiring
+
+                        entity or other relevant parties. We will notify you of any such event and any changes to data
+                        handling practices.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">User Consent: </h1>
+                    <p class="inline text-gray-800"> With your explicit consent, we may share certain information as
+                        specified by you or for additional purposes outlined in our Privacy Policy.
+                    </p>
+                </div>
+
+                <p class=" mt-2"> We are committed to safeguarding your personal data and ensuring that any data sharing
+                    is conducted responsibly and in accordance with
+
+                    our Privacy Policy
+
+                </p>
+            </div>
+
+        </div>
+        <!-- ***************************** -->
+        <!-- Security Measure -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">Security Measure
+            </h1>
+            <p class="mt-2 text-gray-800">At Microcomsol, we prioritize the security of your data and take robust
+                measures to protect it from unauthorized access, disclosure, or misuse.
+
+                We employ industry standard security protocols to safeguard your personal information and ensure a safe
+                learning environment.Our security measure include
+            </p>
+
+            <div>
+                <div class="mt-3">
+                    <h1 class="inline text-lg font-bold">Encryption: </h1>
+                    <p class="inline text-gray-800"> We use strong encryption methods to secure data transmission,
+                        ensuring that your information remains confidential when
+
+                        transmitted over the internet.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Secure Storage: </h1>
+                    <p class="inline text-gray-800">
+                        Your data is stored in secure servers with restricted access, providing an additional layer of
+                        protection against unauthorized access.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Regular Audits: </h1>
+                    <p class="inline text-gray-800"> We conduct regular security audits and assessments to identify and
+                        address potential vulnerabilities, ensuring that our systems are up to date and resilient
+                        against emerging threats.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">User Authentication: </h1>
+                    <p class="inline text-gray-800"> We implement strong user authentication processes to verify user
+                        identities and prevent unauthorized access to accounts.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Monitoring and Logging: </h1>
+                    <p class="inline text-gray-800"> Our systems are continuously monitored, and relevant activities are
+                        logged to detect and respond to any suspicious or unauthorized activities promptly.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Compliance:</h1>
+                    <p class="inline text-gray-800"> We adhere to applicable data protection laws and regulations to
+                        ensure that your data is handled in accordance with legal requirements.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ****************************** -->
+        <!-- User Choices -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">User Choices
+            </h1>
+            <p class="mt-2 text-gray-800">At Microcomsol, we believe in empowering our users with choices regarding
+                their personal information and how it is used. You have the freedom
+
+                to control certain aspects of your data and privacy preferences
+
+            </p>
+
+            <div>
+                <div class="mt-3">
+                    <h1 class="inline text-lg font-bold">Account Settings: </h1>
+                    <p class="inline text-gray-800">You can manage and update your account information, such as your
+                        name, email address, and contact details, through your
+
+                        account settings.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Communication Preferences: </h1>
+                    <p class="inline text-gray-800">
+                        You have the option to choose how you receive communications from us, including newsletters,
+                        updates, and
+                        promotional materials.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Public Profile: </h1>
+                    <p class="inline text-gray-800"> You can decide what information is shared on your public profile,
+                        such as your name, location, website, and links to social media
+                        profiles.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Cookies and Tracking: </h1>
+                    <p class="inline text-gray-800">You have the choice to adjust your browser settings to accept or
+                        reject cookies and tracking technologies used on
+                        our website.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Information Sharing Consent: </h1>
+                    <p class="inline text-gray-800"> We respect your consent choices. If we ever need to share your
+                        information for purposes beyond those
+                        outlined in our Privacy Policy, we will seek your explicit permission.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Data Deletion:</h1>
+                    <p class="inline text-gray-800"> If you decide to discontinue using our services, you can request
+                        the deletion of your account and personal information from
+                        our systems.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Opt Out:</h1>
+                    <p class="inline text-gray-800"> You may choose to opt out of certain data collection or marketing
+                        communications at any time.
+                    </p>
+                </div>
+
+                <p class="mt-3">Your choices are essential to us, and we are committed to respecting and honoring your
+                    decisions. If you have any questions or need assistance
+                    with managing your preferences, our support team is here to help. At Microcomsol, we strive to
+                    provide you with a personalized and empowering
+                    learning experience while ensuring your privacy is always respected.</p>
+
+            </div>
+
+        </div>
+        <!-- ****************************** -->
+        <!-- Legal Basis -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">Legal Basis
+            </h1>
+            <p class="mt-2 text-gray-800">We process your personal information on a lawful basis, ensuring compliance
+                with relevant data protection laws. The legal basis for processing
+                your data may include
+            </p>
+
+            <div>
+                <div class="mt-3">
+                    <h1 class="inline text-lg font-bold">Contractual Necessity: </h1>
+                    <p class="inline text-gray-800"> We process your information to fulfill our contractual obligations
+                        and provide you with the services you have
+                        requested, such as course enrollment and account management.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Consent: </h1>
+                    <p class="inline text-gray-800">
+                        Where applicable, we obtain your explicit consent before processing certain data, such as for
+                        marketing communications or sharing
+                        information with third party partners.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Legitimate Interests: </h1>
+                    <p class="inline text-gray-800"> We may process your data based on our legitimate interests to
+                        improve our services, protect against fraud, and
+                        enhance user experiences. Our legitimate interests align with your rights and freedoms, and we
+                        conduct a careful balancing test to ensure
+                        fairness and privacy.</p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Legal Obligations: </h1>
+                    <p class="inline text-gray-800">We process data to comply with legal requirements, such as tax and
+                        accounting regulations, or in response to valid
+                        government requests.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Vital Interests: </h1>
+                    <p class="inline text-gray-800"> In exceptional circumstances, we may process your data to protect
+                        your vital interests or the interests of others.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 class="inline text-lg font-bold">Public Interest: </h1>
+                    <p class="inline text-gray-800"> In certain cases, data processing may be necessary for reasons of
+                        public interest or official authority.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ****************************** -->
+
+        <!-- Data Retention -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">Data Retention
+            </h1>
+            <p class="mt-2 text-gray-800">At Microcomsol, we retain your personal information only for as long as
+                necessary to fulfill the purposes outlined in our Privacy Policy and to
+                comply with legal obligations. The retention period may vary based on the nature of the data and the
+                specific purposes for which it was collected.
+            </p>
+
+            <p class="mt-4 text-gray-800">Your account information, including contact details and preferences, will be
+                retained for the duration of your active account. If you choose to close
+                your account, we will delete or anonymize your data in a secure manner, unless retention is required to
+                comply with legal requirements or resolve
+                disputes
+            </p>
+
+            <p class="mt-4 text-gray-800">Certain data may be retained for longer periods where necessary to protect our
+                legitimate interests, such as preventing fraud, enforcing our terms
+                of service, or maintaining security.
+            </p>
+
+            <p class="mt-4 text-gray-800">We conduct periodic reviews of our data retention practices to ensure that
+                your personal information is not kept longer than necessary. If you have
+                any questions or require specific information about data retention periods, please do not hesitate to
+                contact our support team.
+            </p>
+
+            <p class="mt-4 text-gray-800">At Microcomsol, we are committed to responsible data management and strive to
+                protect your privacy by adhering to applicable data protection
+                laws and regulations.
+            </p>
+
+
+
+        </div>
+        <!-- ****************************** -->
+
+        <!--International Data Transfers -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">International Data Transfers
+            </h1>
+            <p class="mt-2 text-gray-800">At Microcomsol, we may transfer and process your personal information to
+                locations outside your country of residence. These international data
+                transfers are conducted in accordance with applicable data protection laws and regulations to ensure the
+                security and protection of your
+                information.
+            </p>
+
+            <p class="mt-4 text-gray-800">When we transfer your data to countries that may not have the same level of
+                data protection laws as your home country, we take appropriate
+                safeguards to maintain the confidentiality and integrity of your personal information.
+            </p>
+
+            <p class="mt-4 text-gray-800">One of the key safeguards we implement is the use of standard contractual
+                clauses approved by relevant data protection authorities, which
+                establish legal protections and rights for the transfer of personal data. These contractual clauses
+                ensure that your data is treated in a manner
+                consistent with our Privacy Policy and the requirements of data protection laws.
+            </p>
+
+            <p class="mt-4 text-gray-800">Additionally, our third party service providers, with whom we may share your
+                data, are carefully selected based on their commitment to data
+                security and privacy. These providers are bound by agreements that require them to apply the same level
+                of data protection measures as
+                Microcomsol.
+            </p>
+
+            <p class="mt-4 text-gray-800">By using our services and agreeing to our Privacy Policy, you acknowledge and
+                consent to the transfer of your personal information to countries
+                outside your own, as outlined in this section.
+            </p>
+
+            <p class="mt-4 text-gray-800">We are committed to protecting your privacy and ensuring that your personal
+                information is handled securely and in compliance with applicable
+                data protection laws, regardless of the location of data processing or storage. If you have any
+                questions or concerns about international data
+                transfers, please contact our support team. Your trust and privacy are of utmost importance to us at
+                Microcomsol.
+            </p>
+
+        </div>
+        <!-- ****************************** -->
+
+        <!--Policy Updates-->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">Policy Updates
+            </h1>
+            <p class="mt-2 text-gray-800">At Microcomsol, we may update our Privacy Policy from time to time to reflect
+                changes in our data handling practices, legal requirements, or to
+                improve transparency and user experience. When we make updates, we will revise the last modified date at
+                the top of this page to indicate the
+                most recent changes.
+            </p>
+
+            <p class="mt-4 text-gray-800">We encourage you to review our Privacy Policy periodically to stay informed
+                about how we collect, use, and protect your personal information.
+                By continuing to use our services after any modifications to the Privacy Policy, you signify your
+                acceptance of the revised terms.
+            </p>
+
+            <p class="mt-4 text-gray-800">If we make substantial changes to our Privacy Policy that significantly impact
+                the way we process your personal information, we will provide
+                prominent notice or seek your consent before implementing such changes, where required by law.
+            </p>
+
+            <p class="mt-4 text-gray-800">Your privacy is essential to us, and we are committed to keeping you informed
+                about any updates that may affect your rights and choices
+                concerning your personal data.
+            </p>
+
+            <p class="mt-4 text-gray-800">If you have any questions or concerns about our Privacy Policy or data
+                handling practices, please don t hesitate to contact us. We value your
+                trust and strive to maintain a transparent and responsible approach to data protection at Microcomsol.
+            </p>
+
+        </div>
+        <!-- ****************************** -->
+
+        <!--Contact Information-->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold">Contact Information
+            </h1>
+            <p class="mt-5 text-gray-800">For any inquiries, feedback, or support regarding Microcomsol's services,
+                please don t hesitate to reach out to us. You can contact our team
+                via email at info@microcomsol.com. We are here to assist you and address any questions or concerns you
+                may have. We encourage you to
+                join our online community and engage with us for valuable insights and exciting updates. We appreciate
+                your interest in Microcomsol and
+                look forward to connecting with you!
+            </p>
+        </div>
+        <!-- ****************************** -->
+    </section>
+    <!-- End of main -->
+</body>
+
+</html>
