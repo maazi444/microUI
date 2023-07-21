@@ -12,6 +12,7 @@ tailwind.config = {
         blackish: "#212427",
         greyish: "#f1f1f1",
         lightGreyish: "#b3adad",
+        gry:"#5e5e5e",
       },
       boxShadow: {
         hardsm: "-10px 13px 0px rgba(0, 0, 0, 0.3)",

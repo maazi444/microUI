@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- google fonts end -->
+    <!-- cdn fonts -->
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet" />
+    <!-- cdn fonts end -->
+    <title>User Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="flex flex-col md:flex-row">
+        <!-- header logo -->
+        <div class="p-2 md:p-5 border border-slate-900 bg-greyish">
+            <a href="#">
+                <!-- <h1 class="font-outfit font-normal font-medium text-center text-lg md:text-3xl leading-9">MICROCOMSOL</h1> -->
+                <img src="assets/icons/logo-01.png" class="w-48 mx-auto md:mx-0 md:w-64" />
+            </a>
+        </div>
+        <!-- header logo end -->
+        <!-- navbar -->
+        <nav class="text-blackish p-1 md:p-5 border border-slate-900 w-full">
+            <div class="inline-block flex md:float-right justify-center items-center">
+                <div class="flex items-center">
+                    <a href=""
+                        class="font-montserrat font-normal text-base leading-normal px-2 text-xs md:text-base flex flex-row items-center">
+                        <img src="assets/icons/icons8-exit-30.png" class="w-5 h-5" />
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!-- Header End -->
+    <!-- main section -->
+    <section class="w-full">
+        <div class="flex justify-between w-full">
+            <div class="w-1/2 pl-10 pt-10">
+               <div>
+                <h1 class="text-xl font-bold mb-1 ml-1">About Microcomsol.Education</h1>
+                <p class="pr-20">Join us in revolutionizing education for a brighter world.</p>
+               </div>
+
+                <div class="mt-16">
+                    <h2 class="text-xs text-gry font-bold">Introduction and Vision</h2>
+                    <h1 class="text-xl font-bold mb-1 ml-1">Inspired Vision and Exciting Journey</h1>
+                    <p class="pr-20">We are a passionate team driven by a shared mission to revolutionize 
+                        education. Fueled by our vision of providing the world with the                         education it truly deserves, we are embarking on an exhilarating                         journey.</p>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-xs text-gry font-bold">Innovative Learning Approach</h2>
+                    <h1 class="text-xl font-bold mb-1 ml-1">Beyond Traditional Methods</h1>
+                    <p class="pr-20">Our platform aims to go beyond traditional learning methods,
+                        empowering individuals to unlock their full potential and 
+                        achieve greatness. By offering an immersive and interactive
+                        experience, were transforming education into an engaging 
+                        adventure that ignites curiosity and fuels lifelong learning.</p>
+                </div>
+
+
+                <div class="mt-16">
+                    <h2 class="text-xs text-gry font-bold">Introduction and Vision</h2>
+                    <h1 class="text-xl font-bold mb-1 ml-1">An Immersive Adventure for Lifelong Learning</h1>
+                    <p class="pr-20">With our innovative approach, we're redefining the way
+                        knowledge is imparted and acquired. Join us on this
+                        remarkable mission as we shape the future of education. 
+                        Together, we can build a global community of learners,
+                        where boundaries are shattered, and dreams are 
+                        transformed into reality.</p>
+                </div>
+
+
+                <div class="mt-16">
+                    <h2 class="text-xs text-gry font-bold">Building a Global Community</h2>
+                    <h1 class="text-xl font-bold mb-1 ml-1">Uniting for an Extraordinary Education Revolution</h1>
+                    <p class="pr-20">Are you ready to be a part of something extraordinary? Join us and 
+                        let's create an education revolution that will brighten the lives of 
+                        countless learners worldwide.</p>
+                </div>
+
+
+
+            </div>
+            <div class="w-1/2 pl-10 pt-10">
+                <div class="mt-28">
+                    <h2 class="text-xs text-gry font-bold mb-1">Our History</h2>
+                    <h1 class="text-xl font-bold mb-1 ml-1">Unleashing Education's Boundless 
+                        Potential</h1>
+                    <p class="pr-20">With a shared passion for technology and design, our team embarked
+
+                        on a journey rooted in Computer Science and a drive for growth in the
+                        
+                        fields of Graphic Designing and Web Development. Our collective
+                        
+                        experience spans years of specialized education, hands-on projects,
+                        
+                        and career development in these domains. We have honed our skills,
+                        
+                        constantly staying updated with the latest industry trends and best
+                        
+                        practices. Our history is a testament to our dedication and expertise,
+                        
+                        paving the way for us to offer top-notch courses in Front-end
+                        
+                        Development, Back-end Development, Logo Design, Brand Identity
+                        
+                        Design, and essential tools like Illustrator and Photoshop.</p>
+                </div>
+                <div class="mt-32">
+                    <h2 class="text-xs text-gry font-bold mb-1">Our Mission</h2>
+                    <h1 class="text-xl font-bold mb-1 ml-1">Advance the world's tech 
+                        workforce</h1>
+                    <p class="pr-20">At Microcomsol, our mission is to empower aspiring learners to
+
+                        unleash their creative potential and master the art of digital
+                        
+                        Artistry. We believe in the transformative power of education,
+                        
+                        we are committed to providing accessible and comprehensive
+                        
+                        courses in graphic design, web development, and emerging 
+                        technologies like Artificial Intelligence (AI). Our carefully curated 
+                        curriculum combines theory, practical application, and industry
+                        
+                        insights to equip beginners with the skills they need to thrive in
+                        
+                        today's digital landscape. We aim to foster a supportive community
+                        
+                        of lifelong learners who can confidently navigate the realms of
+                        
+                        design and development while staying ahead of the curve in the
+                        
+                        ever-evolving field of AI. Together, we can shape the future of
+                        
+                        creativity and technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class=" ml-10 mr-10 mt-16 border-t border-blackish">
+            <div class="mt-10">
+                <h2 class="text-xs text-gry font-bold mb-1">Our Team</h2>
+                <h1 class="text-xl font-bold mb-1 ml-1">Our Leadership</h1>
+                <p class="pr-44 mb-10">Our diverse and dynamic team is comprised of highly skilled experts, who bring a wealth of expertise to the table. With backgrounds in
+
+                    Computer science, Graphic Design, and Web Development, our team members possess a deep understanding of the subjects we teach.
+                    
+                    Leveraging our collective knowledge, we are dedicated to creating engaging and comprehensive learning materials that cater to learners
+                    
+                    of all levels. Our instructors are not just educators but industry practitioners, ensuring that our courses are relevant, up to date, and
+                    
+                    aligned with real-world demands. Together, we are committed to providing unparalleled support, guidance, and mentorship to ou
+                    
+                     students as they embark on their learning journey.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of main -->
+</body>
+
+</html>
